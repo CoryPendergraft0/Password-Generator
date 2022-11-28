@@ -3,6 +3,12 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
 //Your code goes here
+var letters = "abcdefghijklmnopqrstuvwxyz";
+var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
+var numbers = "0987654321"
+var upLetters = letters.toUpperCase
+var itsUpperCase = confirm("Would you like to use Uppercase?")
+
 
 }
 
