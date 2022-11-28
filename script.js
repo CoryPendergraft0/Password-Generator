@@ -7,10 +7,23 @@ var letters = "abcdefghijklmnopqrstuvwxyz";
 var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0987654321";
 var upLetters = letters.toUpperCase;
-var itsUpperCase = confirm("Would you like to use Uppercase?");
-var itsLowerCase = confirm("Would you like to use Lowercase?");
+var isUpperCase = confirm("Would you like to use Uppercase?");
+var isLowerCase = confirm("Would you like to use Lowercase?");
 var isSpecial = confirm("Would you like to use Special characters?");
 var isNumber = confirm("Wopuld you like to use Numbers?");
+
+if (isUpperCase) {
+  console.log("uppercase");
+}
+if (isLowerCase) {
+  console.log("lowercase");
+}
+if (isSpecial) {
+  console.log("Special characters");
+}
+if (isNumber) {
+  console.log("Numbers");
+}
 
 
 }
