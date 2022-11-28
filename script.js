@@ -5,12 +5,12 @@ function generatePassword(){
 //Your code goes here
 var letters = "abcdefghijklmnopqrstuvwxyz";
 var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
-var numbers = "0987654321"
-var upLetters = letters.toUpperCase
-var itsUpperCase = confirm("Would you like to use Uppercase?")
-var itsLowerCase = confirm("Would you like to use Lowercase?")
-var isSpecial = confirm("Would you like to use Special characters?")
-var isNumber = confirm("Wopuld you like to use Numbers?")
+var numbers = "0987654321";
+var upLetters = letters.toUpperCase;
+var itsUpperCase = confirm("Would you like to use Uppercase?");
+var itsLowerCase = confirm("Would you like to use Lowercase?");
+var isSpecial = confirm("Would you like to use Special characters?");
+var isNumber = confirm("Wopuld you like to use Numbers?");
 
 
 }
