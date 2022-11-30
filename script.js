@@ -7,24 +7,26 @@ var letters = "abcdefghijklmnopqrstuvwxyz";
 var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0987654321";
 var upLetters = letters.toUpperCase;
+var sum = "";
 var isUpperCase = confirm("Would you like to use Uppercase?");
 var isLowerCase = confirm("Would you like to use Lowercase?");
 var isSpecial = confirm("Would you like to use Special characters?");
-var isNumber = confirm("Wopuld you like to use Numbers?");
+var isNumber = confirm("Would you like to use Numbers?");
 
 if (isUpperCase) {
-  console.log("uppercase");
+  sum.concat(upLetters);
 }
 if (isLowerCase) {
-  console.log("lowercase");
+  sum.concat(letters);
 }
 if (isSpecial) {
-  console.log("Special characters");
+  sum.concat(special);
 }
 if (isNumber) {
-  console.log("Numbers");
+  sum.concat(numbers);
 }
 
+  console.log(sum)
 
 }
 
