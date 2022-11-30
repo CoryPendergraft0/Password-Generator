@@ -8,6 +8,8 @@ var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0987654321";
 var upLetters = letters.toUpperCase();
 var sum = "";
+var newSum = "";
+var final = "";
 var length = prompt("Please choose between 8 and 128 characters");
   for (length; length < 8 || length > 128; ){
     alert("Please select a valid number");
@@ -36,7 +38,17 @@ if (isNumber) {
 if (!isUpperCase && !isLowerCase && !isSpecial && !isNumber){
   alert("You must choose at least 1 option");
 }
+ for (var i = 0; i < length; i++) {
+  var random = Math.floor(Math.random() * sum.length);
+  var newSum = sum.charAt(random);
+    final = final.concat(newSum);
+    }
+
+    return final;
 }
+
+
+
 
 // Write password to the #password input
 function writePassword() {
