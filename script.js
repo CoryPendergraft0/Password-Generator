@@ -6,7 +6,7 @@ function generatePassword(){
 var letters = "abcdefghijklmnopqrstuvwxyz";
 var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0987654321";
-var upLetters = letters.toUpperCase;
+var upLetters = letters.toUpperCase();
 var sum = "";
 var isUpperCase = confirm("Would you like to use Uppercase?");
 var isLowerCase = confirm("Would you like to use Lowercase?");
@@ -14,16 +14,16 @@ var isSpecial = confirm("Would you like to use Special characters?");
 var isNumber = confirm("Would you like to use Numbers?");
 
 if (isUpperCase) {
-  sum.concat(upLetters);
+  sum = sum.concat(upLetters);
 }
 if (isLowerCase) {
-  sum.concat(letters);
+  sum = sum.concat(letters);
 }
 if (isSpecial) {
-  sum.concat(special);
+  sum = sum.concat(special);
 }
 if (isNumber) {
-  sum.concat(numbers);
+  sum = sum.concat(numbers);
 }
 
   console.log(sum)
