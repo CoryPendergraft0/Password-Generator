@@ -8,10 +8,19 @@ var special = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
 var numbers = "0987654321";
 var upLetters = letters.toUpperCase();
 var sum = "";
+var length = prompt("Please choose between 8 and 128 characters")
+
+for (length; length < 8 || length > 128; ){
+  alert("Please select a  vaslid number")
+  var length = prompt("Please choose between 8 and 128 characters")
+}
+
+
 var isUpperCase = confirm("Would you like to use Uppercase?");
 var isLowerCase = confirm("Would you like to use Lowercase?");
 var isSpecial = confirm("Would you like to use Special characters?");
 var isNumber = confirm("Would you like to use Numbers?");
+
 
 if (isUpperCase) {
   sum = sum.concat(upLetters);
