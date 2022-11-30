@@ -11,10 +11,9 @@ var sum = "";
 var length = prompt("Please choose between 8 and 128 characters")
 
 for (length; length < 8 || length > 128; ){
-  alert("Please select a  vaslid number")
+  alert("Please select a valid number")
   var length = prompt("Please choose between 8 and 128 characters")
 }
-
 
 var isUpperCase = confirm("Would you like to use Uppercase?");
 var isLowerCase = confirm("Would you like to use Lowercase?");
@@ -33,10 +32,11 @@ if (isSpecial) {
 }
 if (isNumber) {
   sum = sum.concat(numbers);
+} 
+
+if (!isNumber && !isLowerCase && !isUpperCase && isLowercase){
+  alert("You must choose at least 1 option")
 }
-
-  console.log(sum)
-
 }
 
 // Write password to the #password input
