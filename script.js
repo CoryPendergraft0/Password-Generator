@@ -39,8 +39,8 @@ if (!isUpperCase && !isLowerCase && !isSpecial && !isNumber){
   alert("You must choose at least 1 option");
 }
  for (var i = 0; i < length; i++) {
-  var random = Math.floor(Math.random() * sum.length);
-  var newSum = sum.charAt(random);
+  var randomNum = Math.floor(Math.random() * sum.length);
+  var newSum = sum.charAt(randomNum);
     final = final.concat(newSum);
     }
 
